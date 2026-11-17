@@ -58,6 +58,9 @@ Current skills:
 - `evaluate-agents`: audit live herdr agents and move each to the cheapest
   model that fits the remaining work. Claude-specific (uses `/model`).
 - `grill-me`: relentless one-question-at-a-time interview of a plan.
+- `orchestrate`: `/orchestrate` plans work into waves and dispatches each item
+  to a Claude worker in its own worktree and herdr workspace; workers report
+  state changes back and the orchestrator reviews their PRs. Needs herdr.
 - `herdr`: control the herdr multiplexer from inside an agent pane. Copied from
   [herdrdev/herdr](https://github.com/herdrdev/herdr/tree/master/skills/herdr);
   re-copy after a herdr upgrade if the CLI changes.
