@@ -1,2 +1,33 @@
+model = "gpt-5.6-terra"
+model_reasoning_effort = "high"
 [features]
 hooks = true
+
+[tui]
+screen_reader_detection_done = true
+
+[tui.model_availability_nux]
+"gpt-6.1-sol" = 4
+
+[projects."/home/simon/Downloads"]
+trust_level = "trusted"
+
+[projects."/home/simon/Repos/hydro-pilot"]
+trust_level = "trusted"
+
+[projects."/home/simon/Repos/daamn-ml"]
+trust_level = "trusted"
+
+[projects."/home/simon/Repos/allpha"]
+trust_level = "trusted"
+
+[projects."/home/simon/Repos"]
+trust_level = "trusted"
+
+[hooks.state]
+
+[hooks.state."/home/simon/.codex/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:dfdb54bfff51283ad6683075c9e5bfa7232c85ac19d4e6d66f4a33d8ad1f48bc"
+
+[notice]
+hide_rate_limit_model_nudge = true
